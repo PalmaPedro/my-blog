@@ -33,23 +33,20 @@ const Home: NextPage = () => {
             <ProjectCard
                 title="Project#1"
                 slug="first-project"
-                description=""
+                excerpt="Django is a very powerful, high level Python framework for building web applications"
+                imgSrc=''
+                href=''
+                frontmatter=''
               />
             <ProjectCard
                 title="Project#2"
                 slug="second-project"
-                description=""
+                excerpt="Both Tailwind and Bootstrap are very popular CSS frameworks. In this article, we will compare them"
+                imgSrc=''
+                href=''
+                frontmatter=''
               />
-            <ProjectCard
-                title="Project#3"
-                slug="third-project"
-                description=""
-              />
-            <ProjectCard
-                title="Project#4"
-                slug="fourth-project"
-                description=""
-              />
+           
                <Link href="/projects">
               <a href="#" className="text-blue-600 dark:text-blue-400 hover:underline mt-2 ml-2">
                 View all ⟶

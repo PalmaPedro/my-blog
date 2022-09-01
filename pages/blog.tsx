@@ -1,10 +1,6 @@
 import type { InferGetStaticPropsType, NextPage } from 'next'
-import { createClient } from 'next-sanity'
-import { sanityConfig } from '../lib/sanity-config'
 import { GetStaticProps } from 'next'
 import Container from '../components/Container'
-
-const client = createClient(sanityConfig)
 
 type Blog = {
   _id: string;
@@ -18,7 +14,7 @@ type Blog = {
 }
 
 const Blog: NextPage = ({ blogs }: InferGetStaticPropsType<typeof getStaticProps>) => {
-  blogs.map((blog: any) => console.log(blog.title))
+  //blogs.map((blog: any) => console.log(blog.title))
   
   return (
     <Container>
@@ -32,11 +28,11 @@ const Blog: NextPage = ({ blogs }: InferGetStaticPropsType<typeof getStaticProps
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const blogs: Blog[] = await client.fetch(`*[_type == "post"]`)
+  //const blogs: Blog[] = await client.fetch(`*[_type == "post"]`)
 
   return {
     props: {
-      blogs
+      
     }
   }
 
