@@ -1,19 +1,26 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from "next"
 import Container from '../../components/Container'
+import PostLayout from '../../components/PostLayout'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-//import marked from 'marked'
+import  { marked } from 'marked'
 //import Link from 'next/link'
 
 const ProjectPage: NextPage = ({
   frontmatter: { title, date, cover_image },
   slug,
-  content 
+  content
 }: any) => {
   return (
     <Container>
-      <div> { title } </div>
+      <PostLayout
+        title={title}
+        date={date}
+        cover_image={cover_image}
+        slug={slug}
+        content={content}
+      />
     </Container>
   )
 }

@@ -20,8 +20,8 @@ const Projects: NextPage = ({ projects }: any) => {
             Browse through my side projects
           </p>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-              {projects.map((project: ProjectCard) => (
-                  <ProjectCard
+              {projects.map((project: ProjectCard, index: any) => (
+                  <ProjectCard key={index}
                     title={project.frontmatter.title}
                     slug={project.slug}
                     excerpt={project.frontmatter.excerpt}
@@ -32,7 +32,6 @@ const Projects: NextPage = ({ projects }: any) => {
               ))}
             </div>
         </div>
-
     </Container>
   )
 }

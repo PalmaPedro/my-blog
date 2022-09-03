@@ -11,7 +11,7 @@ type ProjectCard = {
 
 const ProjectCard = ({ title, slug, excerpt }: ProjectCard) => {
   return (
-    <Link href={`/projects/${slug}`}>
+    <Link href={`/project/${slug}`}>
       <div className="max-w-2xl px-8 py-4 mx-auto bg-white rounded-lg shadow-md dark:bg-gray-800">
         <div className="flex items-center justify-between">
             <a className="px-3 py-1 text-sm font-bold text-gray-100 transition-colors duration-200 transform bg-gray-600 rounded cursor-pointer hover:bg-gray-500">NextJS</a>
