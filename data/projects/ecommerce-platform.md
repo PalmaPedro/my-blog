@@ -1,9 +1,10 @@
 ---
-title: World news aggregator app
-date: '2021-10-26'
-tags: ['project', 'dev', 'next js']
+title: Ecommerce platform using Stripe API for payment integration.
+date: '2022-09-15'
+tags: ['Java','Spring Boot',Angular', 'Tailwind', 'MySQL','Stripe API']
 draft: false
-excerpt: 'A news feed aggregator application. Fetches news from multiple sources, allowing the filtering by categories, and world location'
+excerpt: 'Ecommerce platform to show and sell products. This is a fullstack application. The backend is built with Java and Spring Boot, MySQL database, while the frontend is built on
+Angular and Tailwind, for styling'
 author: 'default'
 images: ['/static/img/projects/google-project-thumbnail.png']
 ---
