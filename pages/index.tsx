@@ -28,17 +28,17 @@ const Home: NextPage = () => {
           </h3>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             <ProjectCard
-                title="Project#1"
-                slug="first-project"
-                excerpt="Django is a very powerful, high level Python framework for building web applications"
+                title="Web application to manage IOT devices"
+                slug="iot-application"
+                excerpt="This project is an attempt to start exploring the world of IOT. This is a fullstack application. I will have a device streaming data to a server. This data will be then stored and sent to the frontend part of the application for visualization. The device could be a RaspberyPi, which streams data collected by multiple sensors (temperature, humidity, etc"
                 imgSrc=''
                 href=''
                 frontmatter=''
               />
             <ProjectCard
-                title="Project#2"
-                slug="second-project"
-                excerpt="Both Tailwind and Bootstrap are very popular CSS frameworks. In this article, we will compare them"
+                title="World news aggregator application"
+                slug="news-aggregator"
+                excerpt="This single page application (SPA), pulls in RSS feeds from multiple sources and aggregates them based on date. This application does not require a backend. From the frontend the user can make API calls to fetch the selected news feeds"
                 imgSrc=''
                 href=''
                 frontmatter=''
