@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/future/image';
 
 import Container from '../components/Container';
+import Tag from '../components/Tags';
 
 const  About:NextPage = () => {
   return (
@@ -29,36 +30,37 @@ const  About:NextPage = () => {
             Tech stack
         </h3>
         <div className="grid grid-cols-5 gap-2 text-gray-600 dark:text-gray-400 mb-10">
-          <div className="max-w-2xl px-4 py-2 mx-auto mb-2 bg-white rounded-lg shadow-md dark:bg-gray-800">
-            <div>Java</div>
-          </div>
-          <div className="max-w-2xl px-4 py-2 mx-auto mb-2 bg-white rounded-lg shadow-md dark:bg-gray-800">
-            <div>JavaScript</div>
-          </div>
-          <div className="max-w-2xl px-4 py-2 mx-auto mb-2  bg-white rounded-lg shadow-md dark:bg-gray-800">
-            <div>NodeJs</div>
-          </div>
-          <div className="max-w-2xl px-4 py-2 mx-auto mb-2 bg-white rounded-lg shadow-md dark:bg-gray-800">
-            <div>Spring Boot</div>
-          </div>
-          <div className="max-w-2xl px-4 py-2 mx-auto mb-2 bg-white rounded-lg shadow-md dark:bg-gray-800">
-            <div>Express</div>
-          </div>
-          <div className="max-w-2xl px-4 py-2 mx-auto bg-white rounded-lg shadow-md dark:bg-gray-800">
-            <div>HTML</div>
-          </div>
-          <div className="max-w-2xl px-4 py-2 mx-auto bg-white rounded-lg shadow-md dark:bg-gray-800">
-            <div>CSS, Tailwind</div>
-          </div>
-          <div className="max-w-2xl px-4 py-2 mx-auto bg-white rounded-lg shadow-md dark:bg-gray-800">
-            <div>React, Next</div>
-          </div>
-          <div className="max-w-2xl px-4 py-2 mx-auto bg-white rounded-lg shadow-md dark:bg-gray-800">
-            <div>MySQL</div>
-          </div>
-          <div className="max-w-2xl px-4 py-2 mx-auto bg-white rounded-lg shadow-md dark:bg-gray-800">
-            <div>MongoDb</div>
-          </div>
+          <Tag
+            title='Java'
+          />
+          <Tag
+            title='JavaScript'
+          />
+          <Tag
+            title='NodeJs'
+          />
+          <Tag
+            title='Spring Boot'
+          />
+          <Tag
+            title='Express'
+          />
+          <Tag
+            title='HTML'
+          />
+          <Tag
+            title='CSS, Tailwind'
+          />
+          <Tag
+            title='React, Next'
+          />
+          <Tag
+            title='MySQL'
+          />
+          <Tag
+            title='MongoDb'
+          />
+         
         </div>
         <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
             Work history
