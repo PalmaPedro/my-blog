@@ -34,7 +34,7 @@ const Home: NextPage = () => {
                 imgSrc=''
                 href=''
                 frontmatter=''
-              />
+            />
             <ProjectCard
                 title="World news aggregator application"
                 slug="news-aggregator"
@@ -42,9 +42,8 @@ const Home: NextPage = () => {
                 imgSrc=''
                 href=''
                 frontmatter=''
-              />
-           
-               <Link href="/projects">
+            />
+              <Link href="/projects">
               <a href="#" className="text-blue-600 dark:text-blue-400 hover:underline mt-2 ml-2">
                 View all ⟶
               </a>
